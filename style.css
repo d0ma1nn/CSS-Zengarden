@@ -122,7 +122,9 @@ header:after {
 .requirements {
   order: 2;
   border-left: 1.5rem solid #333333;
-  height: 50rem;
+  max-height: 40rem;
+  background: #d94027;
+  border-bottom: 1.5rem solid #333333;
 }
 .explanation {
   order: 3;
@@ -156,35 +158,69 @@ header:after {
 }
 footer {
   position: absolute;
-  text-align: center;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
   order: 5;
-  right: 30rem;
-  width: 300px;
-  bottom: 0;
+  width: 11rem;
+  bottom: 18rem;
+}
+footer a {
+  color: red;
+  font-size: 2rem;
 }
 footer a:link,
 footer a:visited {
   margin-right: 20px;
+  color: red;
 }
 
 .wrapper {
   padding-top: 30rem;
   display: flex;
-  gap: 15rem;
   margin-left: 12rem;
 }
 .design-selection {
   order: 3;
   column-count: 2;
-  margin-left: -3rem;
   column-width: 2rem;
+  background: #d4cddc;
 }
 
 .design-archives {
   order: 1;
+  margin-left: -1.85rem;
+  border-left: 1.5rem solid #333333;
+  background: #131205;
+  width: 20.5rem;
 }
+
+.design-archives h3 {
+  color: #d5d6d3;
+}
+
 .zen-resources {
   order: 2;
+  width: 21rem;
+  background: #d4cddc;
+}
+.zen-resources::before {
+  content: "";
+  background: #333333;
+  position: absolute;
+  height: 8rem;
+  width: 25px;
+  bottom: -0.5rem;
+  right: 60.15%;
+}
+.zen-resources::after {
+  content: "";
+  background: #333333;
+  position: absolute;
+  height: 8rem;
+  width: 25px;
+  bottom: -0.5rem;
+  right: 36%;
 }
 .sidebar {
   position: absolute;
