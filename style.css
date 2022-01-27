@@ -15,10 +15,11 @@ html {
 body {
   color: #888888;
   background: no-repeat url("/img/bckgr.jpg");
+  /* background: #d5d7d7; */
+
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
 }
 p {
   margin-top: 0;
@@ -26,7 +27,7 @@ p {
 }
 h3 {
   margin-bottom: 0;
-  color: #d94027;
+  color: blue;
 }
 a:link {
   font-weight: bold;
@@ -59,9 +60,7 @@ abbr {
   position: relative;
   display: grid;
   grid-template-columns: 25% 39% 36%;
-  width: 100%;
   border-bottom: 1.5rem solid #333333;
-  width: 95vw;
 }
 
 header h1 {
@@ -116,12 +115,14 @@ header:after {
 }
 .main {
   display: grid;
-  grid-template-columns: 9.5% 46% 28% 12%;
-  gap: 1.5rem;
+  grid-template-columns: 12% 48% 30% 10%;
+  margin-top: -1rem;
+  width: 99vw;
 }
 .requirements {
   order: 2;
   border-left: 1.5rem solid #333333;
+  height: 50rem;
 }
 .explanation {
   order: 3;
@@ -130,20 +131,36 @@ header:after {
 .explanation::after {
   content: "";
   height: 1.5rem;
-  width: 5rem;
+  width: 25rem;
   position: absolute;
   background: #333333;
+  margin-top: -0.6rem;
+}
+.explanation::before {
+  content: "";
+  height: 1.5rem;
+  width: 25rem;
+  position: absolute;
+  background: #333333;
+  margin-top: 40rem;
 }
 .participation {
+  text-align: left;
   order: 4;
   border-left: 1.5rem solid #333333;
+  overflow: scroll;
+  max-height: 51.5rem;
 }
 .benefits {
   order: 1;
 }
 footer {
+  position: absolute;
   text-align: center;
   order: 5;
+  right: 30rem;
+  width: 300px;
+  bottom: 0;
 }
 footer a:link,
 footer a:visited {
@@ -151,45 +168,31 @@ footer a:visited {
 }
 
 .wrapper {
+  padding-top: 30rem;
   display: flex;
+  gap: 15rem;
+  margin-left: 12rem;
+}
+.design-selection {
+  order: 3;
+  column-count: 2;
+  margin-left: -3rem;
+  column-width: 2rem;
+}
+
+.design-archives {
+  order: 1;
+}
+.zen-resources {
+  order: 2;
 }
 .sidebar {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3.2rem;
 }
 .sidebar .wrapper {
   font: 10px verdana, sans-serif;
-  padding: 10px;
-
-  width: 130px;
-}
-.sidebar h3.select {
-  margin: 10px 0 5px 0;
-  width: 97px;
-  height: 16px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.sidebar h3.archives {
-  margin: 25px 0 5px 0;
-  width: 57px;
-  height: 14px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.sidebar h3.resources {
-  margin: 25px 0 5px 0;
-  width: 63px;
-  height: 10px;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .sidebar ul {
@@ -206,11 +209,10 @@ footer a:visited {
   color: #988f5e;
 }
 .sidebar li a:visited {
-  color: #b3ae94;
 }
 
-.extra1 {
+/* .extra1 {
   right: 0;
   width: 148px;
   height: 110px;
-}
+} */
