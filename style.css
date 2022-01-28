@@ -121,10 +121,14 @@ header:after {
 }
 
 .preamble {
-  padding-top: 0.5rem;
-  font-size: 0.7rem;
+  margin-top: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
   order: 3;
   background: #f3c243;
+}
+.preamble h3 {
+  margin-top: 0;
 }
 .preamble::after {
   content: "";
@@ -135,6 +139,12 @@ header:after {
   margin-top: -0.6rem;
   right: 0.2rem;
   top: 5.5rem;
+}
+.preamble p {
+  margin-bottom: 0.5rem;
+}
+.preamble p:last-child {
+  margin-bottom: 0;
 }
 .main {
   display: grid;
@@ -229,6 +239,9 @@ header:after {
   right: 20rem;
   top: 34rem;
 }
+.participation p {
+  font-size: 0.8rem;
+}
 .requirements,
 .explanation,
 .participation,
@@ -283,7 +296,7 @@ footer a:nth-child(2) {
   letter-spacing: 0.45rem;
 }
 footer a {
-  line-height: 1.7rem;
+  line-height: 2.2rem;
 }
 
 .wrapper {
@@ -291,7 +304,7 @@ footer a {
   border-bottom: none;
   display: flex;
   margin: 0 auto;
-  bottom: -1.5rem;
+  bottom: 0;
   width: 74.4vw;
   position: absolute;
   left: 10rem;
@@ -301,7 +314,6 @@ footer a {
 .design-selection {
   order: 3;
   column-count: 2;
-  column-width: 2rem;
   background: #d4cddc;
   width: 23rem;
 }
@@ -316,6 +328,7 @@ footer a {
 .zen-resources h3,
 .design-selection h3 {
   margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .zen-resources {
@@ -342,7 +355,8 @@ footer a {
   padding: 0;
 }
 .sidebar li {
-  line-height: 1.3rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
   display: block;
   list-style-type: none;
 }
