@@ -59,12 +59,12 @@ abbr {
   padding-top: 1.5rem;
   position: relative;
   display: grid;
-  grid-template-columns: 24% 39% 35%;
+  grid-template-columns: 24% 38.8% 37.2%;
   border-bottom: 1.5rem solid #333333;
 }
 
 header h1 {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.09rem;
   font-size: 3.2rem;
   line-height: 0.5rem;
   text-transform: uppercase;
@@ -78,7 +78,7 @@ header h2 {
   font-size: 2rem;
   position: absolute;
   line-height: 0.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.28rem;
   bottom: 0;
 }
 
@@ -123,6 +123,7 @@ header:after {
 .preamble {
   margin-top: 0;
   padding: 0.5rem;
+  padding-right: 2rem;
   font-size: 0.8rem;
   order: 3;
   background: #f3c243;
@@ -132,13 +133,13 @@ header:after {
 }
 .preamble::after {
   content: "";
-  height: 6.5rem;
+  height: 4.5rem;
   width: 1.5rem;
   position: absolute;
   background: #333333;
   margin-top: -0.6rem;
-  right: 0.2rem;
-  top: 5.5rem;
+  right: 0rem;
+  top: 7.5rem;
 }
 .preamble p {
   margin-bottom: 0.5rem;
