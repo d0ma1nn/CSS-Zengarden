@@ -19,6 +19,7 @@ body {
 p {
   margin-top: 0;
   text-align: justify;
+  color: #333333;
 }
 h3 {
   margin-bottom: 0;
@@ -64,19 +65,17 @@ abbr {
 
 header h1 {
   letter-spacing: 0.1rem;
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 0.5rem;
   text-transform: uppercase;
   color: #f3c243;
   bottom: 1rem;
   position: absolute;
-}
-header h1 {
   text-shadow: 2px 2px #d94027;
 }
 
 header h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   position: absolute;
   line-height: 0.5rem;
   letter-spacing: 0.3rem;
@@ -84,7 +83,7 @@ header h2 {
 }
 
 header {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   background: #d5d6d3;
   color: #d94027;
   order: 2;
@@ -104,36 +103,38 @@ header:after {
   background: #333333;
   position: absolute;
   right: 0;
-  height: 9rem;
-  width: 25px;
+  height: 10.15rem;
+  width: 1.5rem;
   bottom: -0.5rem;
 }
 
 .summary {
-  padding-top: 2rem;
+  margin-top: 3rem;
   order: 1;
   padding-right: 0.5rem;
   background: #d5d6d3;
 }
 .summary p {
   text-align: right;
+  margin-bottom: 0;
+  padding-top: 0.8rem;
 }
 
 .preamble {
+  padding-top: 0.5rem;
   font-size: 0.7rem;
   order: 3;
   background: #f3c243;
-  padding: 0rem 1rem 0rem 0.5rem;
 }
 .preamble::after {
   content: "";
-  height: 7.5rem;
+  height: 6.5rem;
   width: 1.5rem;
   position: absolute;
   background: #333333;
   margin-top: -0.6rem;
   right: 0.2rem;
-  top: 5rem;
+  top: 5.5rem;
 }
 .main {
   display: grid;
@@ -157,7 +158,7 @@ header:after {
   position: absolute;
   background: #333333;
   right: 18.5rem;
-  top: 32rem;
+  top: 33rem;
 }
 
 .requirements h3 {
@@ -177,10 +178,10 @@ header:after {
   height: 17.5rem;
   position: absolute;
   right: 8.3rem;
-  top: 33.5rem;
+  top: 34rem;
 }
 .explanation {
-  color: #d94027;
+  color: #333333;
   background: #f3c243;
   order: 3;
   border-left: 1.5rem solid #333333;
@@ -188,7 +189,7 @@ header:after {
 }
 .explanation h3 {
   font-size: 1.5rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #131205;
   background: #d5d7d7;
@@ -203,7 +204,7 @@ header:after {
 }
 .participation h3 {
   font-size: 1rem;
-  letter-spacing: 0.23rem;
+  letter-spacing: 0.09rem;
   word-wrap: break-word;
   text-transform: uppercase;
   background: #d94027;
@@ -216,7 +217,7 @@ header:after {
   position: absolute;
   background: #333333;
   right: 8rem;
-  top: 32rem;
+  top: 32.5rem;
 }
 .participation::before {
   content: "";
@@ -226,9 +227,14 @@ header:after {
   height: 17.5rem;
   position: absolute;
   right: 20rem;
-  top: 33.5rem;
+  top: 34rem;
 }
-
+.requirements,
+.explanation,
+.participation,
+.benefits {
+  padding: 0.1rem 0.5rem;
+}
 .benefits {
   order: 1;
 }
@@ -236,15 +242,16 @@ header:after {
 .benefits h3 {
   background: #f3c243;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
 }
 footer {
   position: absolute;
   letter-spacing: 0.1rem;
   order: 5;
   text-align: right;
-  width: 11rem;
+  width: 11.2rem;
   bottom: 18rem;
+  padding-top: 0;
 }
 footer a {
   color: #f3c243;
@@ -265,10 +272,18 @@ footer::before {
   left: 3.5rem;
   top: -2rem;
 }
-footer a:nth-child(1),
-footer a:nth-child(2) {
+footer a:nth-child(-1n + 2) {
   background: #f3c243;
   color: #d94027;
+}
+footer a:nth-child(1) {
+  letter-spacing: 0.9rem;
+}
+footer a:nth-child(2) {
+  letter-spacing: 0.45rem;
+}
+footer a {
+  line-height: 1.7rem;
 }
 
 .wrapper {
@@ -290,9 +305,6 @@ footer a:nth-child(2) {
   background: #d4cddc;
   width: 23rem;
 }
-.design-selection h3 {
-  margin-top: 0;
-}
 
 .design-archives {
   order: 1;
@@ -300,9 +312,10 @@ footer a:nth-child(2) {
   width: 19rem;
 }
 
-.design-archives h3 {
+.design-archives h3,
+.zen-resources h3,
+.design-selection h3 {
   margin-top: 0;
-  color: #d94027;
 }
 
 .zen-resources {
@@ -312,14 +325,13 @@ footer a:nth-child(2) {
   border-right: 1.5rem solid #333333;
 }
 
-.zen-resources h3 {
-  margin-top: 0;
-}
-
 .sidebar {
   position: absolute;
   left: 0;
   bottom: 0rem;
+}
+.sidebar h3 {
+  color: #d94027;
 }
 .sidebar .wrapper {
   font: 10px verdana, sans-serif;
@@ -337,9 +349,3 @@ footer a:nth-child(2) {
 .sidebar li a:link {
   color: #988f5e;
 }
-
-/* .extra1 {
-  right: 0;
-  width: 148px;
-  height: 110px;
-} */
