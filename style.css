@@ -27,7 +27,7 @@ h3 {
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #b7a5df;
+  color: #d94027;
 }
 a:visited {
   font-weight: bold;
@@ -38,7 +38,10 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: red;
+  color: #333333;
+}
+.view-css a {
+  color: #d94027;
 }
 abbr {
   border-bottom: none;
@@ -220,6 +223,7 @@ header:after {
   right: 19rem;
   top: 32.4rem;
 }
+
 .benefits {
   order: 1;
 }
@@ -257,13 +261,14 @@ footer::before {
   display: flex;
   margin-left: 12rem;
   bottom: 0;
+  width: 100%;
 }
 .design-selection {
   order: 3;
   column-count: 2;
   column-width: 2rem;
   background: #d4cddc;
-  width: 23rem;
+  width: 21.5rem;
   padding-left: 0.8rem;
 }
 
@@ -272,7 +277,7 @@ footer::before {
   margin-left: -1.85rem;
   border-left: 1.5rem solid #333333;
   background: #333333;
-  width: 21rem;
+  width: 18.4rem;
 }
 
 .design-archives h3 {
@@ -280,8 +285,9 @@ footer::before {
 }
 
 .zen-resources {
+  padding-left: 2rem;
   order: 2;
-  width: 19rem;
+  width: 21.2rem;
   background: #d4cddc;
 }
 .zen-resources::before {
