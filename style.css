@@ -23,6 +23,7 @@ p {
 h3 {
   margin-bottom: 0;
   color: #988f5e;
+  margin-top: 0.8rem;
 }
 a:link {
   font-weight: bold;
@@ -32,7 +33,7 @@ a:link {
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #d4cddc;
+  color: #333333;
 }
 a:hover,
 a:focus,
@@ -136,9 +137,8 @@ header:after {
 }
 .main {
   display: grid;
-  grid-template-columns: 12% 48% 30% 10%;
+  grid-template-columns: 12% 49% 29% 10% 0%;
   margin-top: -1rem;
-  width: 99vw;
 }
 
 .main h3 {
@@ -149,7 +149,15 @@ header:after {
   border-left: 1.5rem solid #333333;
   max-height: 40rem;
   background: #d94027;
-  border-bottom: 1.5rem solid #333333;
+}
+.requirements::after {
+  content: "";
+  height: 25rem;
+  width: 1.5rem;
+  position: absolute;
+  background: #333333;
+  right: 18.5rem;
+  top: 32rem;
 }
 
 .requirements h3 {
@@ -160,53 +168,30 @@ header:after {
 .requirements p {
   color: #d5d7d7;
 }
-.requirements::after {
-  content: "";
-  height: 25rem;
-  width: 1.5rem;
-  position: absolute;
-  background: #333333;
-  top: 45%;
-  right: 37.35%;
-}
+
 .requirements::before {
   content: "";
   background: no-repeat url("/img/mon.jpg");
   background-size: cover;
-  width: 10.8rem;
-  height: 18.8rem;
+  width: 11rem;
+  height: 17.5rem;
   position: absolute;
-  right: 7.25rem;
-  top: 32.4rem;
+  right: 8.3rem;
+  top: 33.5rem;
 }
 .explanation {
   color: #d94027;
   background: #f3c243;
   order: 3;
   border-left: 1.5rem solid #333333;
-  height: 20rem;
+  height: 40rem;
 }
 .explanation h3 {
   font-size: 1.5rem;
-  letter-spacing: 0.21rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
   color: #131205;
   background: #d5d7d7;
-}
-.explanation::after {
-  content: "";
-  height: 1.5rem;
-  width: 25rem;
-  position: absolute;
-  background: #333333;
-}
-.explanation::before {
-  content: "";
-  height: 1.5rem;
-  width: 25rem;
-  position: absolute;
-  background: #333333;
-  bottom: 10rem;
 }
 
 .participation {
@@ -218,7 +203,7 @@ header:after {
 }
 .participation h3 {
   font-size: 1rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.23rem;
   word-wrap: break-word;
   text-transform: uppercase;
   background: #d94027;
@@ -226,22 +211,22 @@ header:after {
 }
 .participation::after {
   content: "";
-  height: 20rem;
-  width: 1.5rem;
+  height: 1.5rem;
+  width: 24rem;
   position: absolute;
   background: #333333;
-  right: 18rem;
+  right: 8rem;
   top: 32rem;
 }
 .participation::before {
   content: "";
   background: no-repeat url("/img/pit.jpg");
   background-size: cover;
-  width: 12.5rem;
-  height: 18.8rem;
+  width: 11rem;
+  height: 17.5rem;
   position: absolute;
-  right: 19rem;
-  top: 32.4rem;
+  right: 20rem;
+  top: 33.5rem;
 }
 
 .benefits {
@@ -280,16 +265,21 @@ footer::before {
   left: 3.5rem;
   top: -2rem;
 }
+footer a:nth-child(1),
+footer a:nth-child(2) {
+  background: #f3c243;
+  color: #d94027;
+}
 
 .wrapper {
   border: 1.5rem solid #333333;
   border-bottom: none;
   display: flex;
   margin: 0 auto;
-  bottom: -1rem;
-  width: 75.5vw;
+  bottom: -1.5rem;
+  width: 74.4vw;
   position: absolute;
-  left: 10.1rem;
+  left: 10rem;
   box-sizing: content-box;
 }
 
@@ -298,7 +288,7 @@ footer::before {
   column-count: 2;
   column-width: 2rem;
   background: #d4cddc;
-  width: 24rem;
+  width: 23rem;
 }
 .design-selection h3 {
   margin-top: 0;
@@ -306,7 +296,7 @@ footer::before {
 
 .design-archives {
   order: 1;
-
+  background: #333333;
   width: 19rem;
 }
 
@@ -318,22 +308,14 @@ footer::before {
 .zen-resources {
   padding-left: 0.2rem;
   order: 2;
-  width: 22rem;
-  background: #d4cddc;
+  width: 20.5rem;
+  border-right: 1.5rem solid #333333;
 }
 
 .zen-resources h3 {
   margin-top: 0;
 }
-.zen-resources::after {
-  content: "";
-  background: #333333;
-  position: absolute;
-  height: 9rem;
-  width: 25px;
-  bottom: 0.5rem;
-  right: 37%;
-}
+
 .sidebar {
   position: absolute;
   left: 0;
