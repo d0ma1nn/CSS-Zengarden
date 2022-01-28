@@ -54,7 +54,7 @@ abbr {
   padding-top: 1.5rem;
   position: relative;
   display: grid;
-  grid-template-columns: 24% 37% 29%;
+  grid-template-columns: 24% 39% 35%;
   border-bottom: 1.5rem solid #333333;
 }
 
@@ -128,8 +128,8 @@ header:after {
   position: absolute;
   background: #333333;
   margin-top: -0.6rem;
-  right: 7.8rem;
-  top: 4rem;
+  right: 0.2rem;
+  top: 5rem;
 }
 .main {
   display: grid;
@@ -209,6 +209,16 @@ header:after {
   background: #333333;
   right: 18rem;
   top: 32rem;
+}
+.participation::before {
+  content: "";
+  background: no-repeat url("/img/pit.jpg");
+  background-size: cover;
+  width: 12.5rem;
+  height: 18.8rem;
+  position: absolute;
+  right: 19rem;
+  top: 32.4rem;
 }
 .benefits {
   order: 1;
