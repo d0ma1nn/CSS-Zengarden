@@ -59,7 +59,7 @@ abbr {
   padding-top: 1.5rem;
   position: relative;
   display: grid;
-  grid-template-columns: 25% 39% 36%;
+  grid-template-columns: 24% 37% 29%;
   border-bottom: 1.5rem solid #333333;
 }
 
@@ -94,7 +94,7 @@ header:after {
   background: #333333;
   position: absolute;
   right: 0;
-  height: 8rem;
+  height: 9rem;
   width: 25px;
   bottom: -0.5rem;
 }
@@ -102,6 +102,8 @@ header:after {
 .summary {
   clear: both;
   order: 1;
+  padding-right: 0.5rem;
+  background: #d5d6d3;
 }
 .summary p {
   font: regular 0.7rem/1.4rem arial;
@@ -112,6 +114,17 @@ header:after {
   font-size: 0.7rem;
   order: 3;
   background: #f3c243;
+  padding: 0rem 1rem 0rem 0.5rem;
+}
+.preamble::after {
+  content: "";
+  height: 7.5rem;
+  width: 1.5rem;
+  position: absolute;
+  background: #333333;
+  margin-top: -0.6rem;
+  right: 7.8rem;
+  top: 4rem;
 }
 .main {
   display: grid;
@@ -136,7 +149,6 @@ header:after {
   width: 25rem;
   position: absolute;
   background: #333333;
-  margin-top: -0.6rem;
 }
 .explanation::before {
   content: "";
@@ -152,6 +164,15 @@ header:after {
   border-left: 1.5rem solid #333333;
   overflow: scroll;
   max-height: 51.5rem;
+}
+.participation::after {
+  content: "";
+  height: 20rem;
+  width: 1.5rem;
+  position: absolute;
+  background: #333333;
+  right: 20rem;
+  top: 31.5rem;
 }
 .benefits {
   order: 1;
@@ -175,6 +196,16 @@ footer a:visited {
   color: red;
 }
 
+footer::before {
+  content: "";
+  background: #333333;
+  position: absolute;
+  height: 1.5rem;
+  width: 7rem;
+  left: 3.5rem;
+  top: -2rem;
+}
+
 .wrapper {
   padding-top: 30rem;
   display: flex;
@@ -191,41 +222,42 @@ footer a:visited {
   order: 1;
   margin-left: -1.85rem;
   border-left: 1.5rem solid #333333;
-  background: #131205;
-  width: 20.5rem;
+  background: #333333;
+  width: 28rem;
 }
 
 .design-archives h3 {
-  color: #d5d6d3;
+  color: #131205;
 }
 
 .zen-resources {
   order: 2;
-  width: 21rem;
+  width: 28rem;
   background: #d4cddc;
+  padding-left: 2rem;
 }
 .zen-resources::before {
   content: "";
   background: #333333;
   position: absolute;
-  height: 8rem;
+  height: 11rem;
   width: 25px;
   bottom: -0.5rem;
-  right: 60.15%;
+  right: 62%;
 }
 .zen-resources::after {
   content: "";
   background: #333333;
   position: absolute;
-  height: 8rem;
+  height: 11rem;
   width: 25px;
   bottom: -0.5rem;
-  right: 36%;
+  right: 39%;
 }
 .sidebar {
   position: absolute;
   left: 0;
-  bottom: 3.2rem;
+  bottom: 0;
 }
 .sidebar .wrapper {
   font: 10px verdana, sans-serif;
@@ -246,7 +278,6 @@ footer a:visited {
 }
 .sidebar li a:visited {
 }
-
 /* .extra1 {
   right: 0;
   width: 148px;
