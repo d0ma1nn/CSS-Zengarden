@@ -159,7 +159,7 @@ header:after {
 .requirements {
   order: 2;
   border-left: 1.5rem solid #333333;
-  max-height: 40rem;
+  min-height: 49rem;
   background: #d94027;
 }
 .requirements::after {
@@ -208,18 +208,16 @@ header:after {
 
 .participation {
   text-align: left;
-  order: 4;
-  border-left: 1.5rem solid #333333;
-  overflow: scroll;
+  order: 1;
   max-height: 48.5rem;
 }
 .participation h3 {
   font-size: 1rem;
-  letter-spacing: 0.09rem;
+  letter-spacing: 0.08rem;
   word-wrap: break-word;
   text-transform: uppercase;
-  background: #d94027;
-  color: #d4cddc;
+  background: #f3c243;
+  color: #d94027;
 }
 .participation::after {
   content: "";
@@ -247,57 +245,71 @@ header:after {
 .explanation,
 .participation,
 .benefits {
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem 0.2rem;
+  padding-left: 0.5rem;
 }
 .benefits {
-  order: 1;
+  order: 4;
+  border-left: 1.5rem solid #333333;
 }
 
 .benefits h3 {
-  background: #f3c243;
+  color: #f3c243;
+  background: #d94027;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+.benefits::before {
+  content: "";
+  width: 8.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background: #333333;
+  left: 2.5rem;
+  top: 52rem;
+}
+.benefits::after {
+  content: "";
+  width: 8.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background: #333333;
+  right: 2.5rem;
+  top: 47rem;
 }
 footer {
   position: absolute;
-  letter-spacing: 0.1rem;
   order: 5;
+  width: 7.5rem;
+  top: 49rem;
+  right: 0rem;
   text-align: right;
-  width: 11.2rem;
-  bottom: 18rem;
-  padding-top: 0;
 }
 footer a {
   color: #f3c243;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 footer a:link,
 footer a:visited {
-  margin-right: 20px;
   color: #333333;
 }
 
-footer::before {
-  content: "";
-  background: #333333;
-  position: absolute;
-  height: 1.5rem;
-  width: 7rem;
-  left: 3.5rem;
-  top: -2rem;
-}
 footer a:nth-child(-1n + 2) {
   background: #f3c243;
   color: #d94027;
 }
 footer a:nth-child(1) {
-  letter-spacing: 0.9rem;
+  letter-spacing: 0.5rem;
 }
 footer a:nth-child(2) {
-  letter-spacing: 0.45rem;
+  letter-spacing: 0.48rem;
 }
 footer a {
-  line-height: 2.2rem;
+  line-height: 1.6rem;
+}
+footer a:nth-child(4) {
+  letter-spacing: 0.2rem;
 }
 
 .wrapper {
@@ -305,10 +317,10 @@ footer a {
   border-bottom: none;
   display: flex;
   margin: 0 auto;
-  bottom: 0;
   width: 74.4vw;
   position: absolute;
   left: 10rem;
+  bottom: 0;
   box-sizing: content-box;
 }
 
@@ -335,8 +347,9 @@ footer a {
 .zen-resources {
   padding-left: 0.2rem;
   order: 2;
-  width: 20.5rem;
+  width: 20.7rem;
   border-right: 1.5rem solid #333333;
+  background: #d4cddc;
 }
 
 .sidebar {
