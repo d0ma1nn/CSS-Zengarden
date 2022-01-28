@@ -14,12 +14,7 @@ html {
 }
 body {
   color: #888888;
-  background: no-repeat url("/img/bckgr.jpg");
   background: #d5d7d7;
-
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
 }
 p {
   margin-top: 0;
@@ -64,13 +59,24 @@ abbr {
 }
 
 header h1 {
-  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
   line-height: 0.5rem;
   text-transform: uppercase;
+  color: #f3c243;
+  bottom: 1rem;
+  position: absolute;
+}
+header h1 {
+  text-shadow: 2px 2px #d94027;
 }
 
 header h2 {
+  font-size: 1.8rem;
+  position: absolute;
   line-height: 0.5rem;
+  letter-spacing: 0.3rem;
+  bottom: 0;
 }
 
 header {
@@ -100,13 +106,12 @@ header:after {
 }
 
 .summary {
-  clear: both;
+  padding-top: 2rem;
   order: 1;
   padding-right: 0.5rem;
   background: #d5d6d3;
 }
 .summary p {
-  font: regular 0.7rem/1.4rem arial;
   text-align: right;
 }
 
@@ -132,6 +137,10 @@ header:after {
   margin-top: -1rem;
   width: 99vw;
 }
+
+.main h3 {
+  font-size: 1.5rem;
+}
 .requirements {
   order: 2;
   border-left: 1.5rem solid #333333;
@@ -145,9 +154,26 @@ header:after {
 .requirements p {
   color: #d5d7d7;
 }
+.requirements::after {
+  content: "";
+  height: 25rem;
+  width: 1.5rem;
+  position: absolute;
+  background: #333333;
+  top: 45%;
+  right: 37.35%;
+}
 .explanation {
+  color: #d94027;
+  background: #f3c243;
   order: 3;
   border-left: 1.5rem solid #333333;
+  height: 20rem;
+}
+.explanation h3 {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #131205;
 }
 .explanation::after {
   content: "";
@@ -162,8 +188,9 @@ header:after {
   width: 25rem;
   position: absolute;
   background: #333333;
-  margin-top: 40rem;
+  bottom: 10rem;
 }
+
 .participation {
   text-align: left;
   order: 4;
@@ -171,14 +198,17 @@ header:after {
   overflow: scroll;
   max-height: 51.5rem;
 }
+.participation h3 {
+  font-size: 1rem;
+}
 .participation::after {
   content: "";
   height: 20rem;
   width: 1.5rem;
   position: absolute;
   background: #333333;
-  right: 20rem;
-  top: 31.5rem;
+  right: 18rem;
+  top: 32rem;
 }
 .benefits {
   order: 1;
@@ -224,6 +254,7 @@ footer::before {
   column-width: 2rem;
   background: #d4cddc;
   width: 23rem;
+  padding-left: 0.8rem;
 }
 
 .design-archives {
@@ -240,9 +271,8 @@ footer::before {
 
 .zen-resources {
   order: 2;
-  width: 18rem;
+  width: 19rem;
   background: #d4cddc;
-  padding-left: 2rem;
 }
 .zen-resources::before {
   content: "";
