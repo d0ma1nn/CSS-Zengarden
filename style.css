@@ -15,7 +15,7 @@ html {
 body {
   color: #888888;
   background: no-repeat url("/img/bckgr.jpg");
-  /* background: #d5d7d7; */
+  background: #d5d7d7;
 
   background-size: cover;
   width: 100vw;
@@ -139,6 +139,12 @@ header:after {
   background: #d94027;
   border-bottom: 1.5rem solid #333333;
 }
+.requirements h3 {
+  color: #f3c243;
+}
+.requirements p {
+  color: #d5d7d7;
+}
 .explanation {
   order: 3;
   border-left: 1.5rem solid #333333;
@@ -187,13 +193,13 @@ footer {
   bottom: 18rem;
 }
 footer a {
-  color: red;
+  color: #f3c243;
   font-size: 2rem;
 }
 footer a:link,
 footer a:visited {
   margin-right: 20px;
-  color: red;
+  color: #d94027;
 }
 
 footer::before {
@@ -210,12 +216,14 @@ footer::before {
   padding-top: 30rem;
   display: flex;
   margin-left: 12rem;
+  bottom: 0;
 }
 .design-selection {
   order: 3;
   column-count: 2;
   column-width: 2rem;
   background: #d4cddc;
+  width: 23rem;
 }
 
 .design-archives {
@@ -223,7 +231,7 @@ footer::before {
   margin-left: -1.85rem;
   border-left: 1.5rem solid #333333;
   background: #333333;
-  width: 28rem;
+  width: 21rem;
 }
 
 .design-archives h3 {
@@ -232,7 +240,7 @@ footer::before {
 
 .zen-resources {
   order: 2;
-  width: 28rem;
+  width: 18rem;
   background: #d4cddc;
   padding-left: 2rem;
 }
@@ -240,24 +248,24 @@ footer::before {
   content: "";
   background: #333333;
   position: absolute;
-  height: 11rem;
+  height: 9rem;
   width: 25px;
-  bottom: -0.5rem;
-  right: 62%;
+  right: 60%;
+  bottom: 0rem;
 }
 .zen-resources::after {
   content: "";
   background: #333333;
   position: absolute;
-  height: 11rem;
+  height: 9rem;
   width: 25px;
-  bottom: -0.5rem;
-  right: 39%;
+  bottom: 0.5rem;
+  right: 31%;
 }
 .sidebar {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 1rem;
 }
 .sidebar .wrapper {
   font: 10px verdana, sans-serif;
@@ -268,16 +276,14 @@ footer::before {
   padding: 0;
 }
 .sidebar li {
-  line-height: 1.3em;
+  line-height: 1.3rem;
   display: block;
-  margin-bottom: 5px;
   list-style-type: none;
 }
 .sidebar li a:link {
   color: #988f5e;
 }
-.sidebar li a:visited {
-}
+
 /* .extra1 {
   right: 0;
   width: 148px;
